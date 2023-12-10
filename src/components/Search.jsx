@@ -16,8 +16,8 @@ function Search() {
 
   return (
     <div>
-        <h1 className="bg-orange-600 text-white font-bold text-4xl p-3 text-center">Filter and Search</h1>
-      <form onSubmit={changeDisplay} className="my-8 flex justify-center items-center">
+        <h1 className="bg-orange-600 text-white font-bold text-xl sm:text-4xl p-3 text-center">Filter and Search</h1>
+      <form onSubmit={changeDisplay} className="form sm:my-8 my-4 flex justify-center flex-wrap items-center">
         <label htmlFor="search" className="mr-2 text-xl font-semibold">Search: </label>
         <input
           id="search"
@@ -25,9 +25,9 @@ function Search() {
           placeholder="Search by name..."
           value={searchTerm}
           onChange={handleInputChange}
-          className="border p-2 outline-none rounded"
+          className="border p-2 outline-none rounded mr-8"
         />
-        <button className="ml-12 border bg-slate-500 text-white px-6 py-1 rounded font-semibold hover:bg-slate-600">Search</button>
+        <button className="mt-3 sm:ml-12 border bg-slate-500 text-white px-6 py-1 rounded font-semibold hover:bg-slate-600 mb-3">Search</button>
       </form>
     </div>
   );

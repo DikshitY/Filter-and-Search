@@ -23,10 +23,10 @@ function Filter() {
   };
 
   return (
-    <div className="flex justify-start gap-12 mb-12 ml-20">
+    <div className="flex justify-start gap-12 mb-4 sm:mb-12 sm:ml-20 p-4">
       <div className="flex flex-col">
-        <p className="font-semibold">Sort by:-</p>
-        <label>
+        <p className="font-semibold mb-2">Sort by:-</p>
+        <label  className="text-xs sm:text-base">
           <input
             type="radio"
             name="radio-check"
@@ -35,7 +35,7 @@ function Filter() {
           />
           Price - High to Low
         </label>
-        <label>
+        <label className="text-xs sm:text-base">
           <input
             type="radio"
             name="radio-check"
@@ -46,8 +46,8 @@ function Filter() {
         </label>
       </div>
       <div className="flex flex-col">
-        <p className="font-semibold">Filter by:-</p>
-        <label>
+        <p className="font-semibold mb-2">Filter by:-</p>
+        <label className="text-xs sm:text-base">
           <input
             type="checkbox"
             value={checkBox[0]}
@@ -55,7 +55,7 @@ function Filter() {
           />
           Include Out of Stock
         </label>
-        <label>
+        <label className="text-xs sm:text-base">
           <input
             type="checkbox"
             value={checkBox[1]}
